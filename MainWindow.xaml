@@ -24,7 +24,7 @@
                 <Button Width="100" Height="50" Style="{DynamicResource MaterialDesignRaisedButton}"
                         Content="Button" Margin="0, 0, 10, 10"
                         HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
-                <Label Content="Here is a label"
+                <Label Content="A window capable of scaling with resolution AND dpi"
                        HorizontalAlignment="Center" VerticalAlignment="Center"/>
             </Grid>
         </Viewbox>
