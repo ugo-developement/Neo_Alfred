@@ -17,13 +17,22 @@
         FontFamily="{DynamicResource MaterialDesignFont}">
     <controls:DpiDecorator>
         <DockPanel>
-            <DockPanel DockPanel.Dock="Top" MinHeight="60"> 
-                <Button DockPanel.Dock="Left" MaxWidth="50" MaxHeight="50"
-                        VerticalAlignment="Bottom"
-                        Content="{materialDesign:PackIcon Kind=Bell}"
-                        Style="{DynamicResource MaterialDesignFlatButton}"/>
+            <DockPanel DockPanel.Dock="Top" MinHeight="60"
+                       Background="#FF06C566"> 
+                <Button DockPanel.Dock="Top" MaxWidth="60" Visibility="Visible"
+                        HorizontalAlignment="Left"
+                        Content="{materialDesign:PackIcon Kind=Bell,Size=24}"
+                        Style="{DynamicResource MaterialDesignFlatButton}"
+                        Foreground="#FFFFFF"/>
+                <Button DockPanel.Dock="Top" MaxWidth="60" Visibility="Collapsed"
+                        HorizontalAlignment="Left"
+                        Content="{materialDesign:PackIcon Kind=BellRing,Size=24}"
+                        Style="{DynamicResource MaterialDesignFlatButton}"
+                        Foreground="#FFFFFF"/>
                 <Label DockPanel.Dock="Bottom" VerticalAlignment="Bottom"
-                       Content="No new notifications/tasks."/>
+                       Content="Alfred v0.1.0"
+                       HorizontalContentAlignment="Center"
+                       Foreground="#FFFFFF"/>
             </DockPanel>
             <Grid DockPanel.Dock="Left">
                 <Grid.RowDefinitions>
@@ -31,21 +40,26 @@
                     <RowDefinition/>
                     <RowDefinition/>
                     <RowDefinition/>
+                    <RowDefinition/>
                 </Grid.RowDefinitions>
-                <Button Content="{materialDesign:PackIcon Kind=Home, Size=48}" Grid.Row="0" 
-                        Height="Auto"
-                        Style="{DynamicResource MaterialDesignFlatButton}"/>
-                <Button Content="{materialDesign:PackIcon Kind=Bank, Size=48}" Grid.Row="1" 
-                        Height="Auto"
-                        Style="{DynamicResource MaterialDesignFlatButton}"/>
-                <Button Content="{materialDesign:PackIcon Kind=CashMultiple, Size=48}" Grid.Row="2" 
-                        Height="Auto"
-                        Style="{DynamicResource MaterialDesignFlatButton}"/>
-                <Button Content="{materialDesign:PackIcon Kind=AccountMultiple, Size=48}" Grid.Row="3" 
-                        Height="Auto"
-                        Style="{DynamicResource MaterialDesignFlatButton}"/>
+                <Button Content="Home" Grid.Row="0" x:Name="btn_Home"
+                        Style="{DynamicResource MaterialDesignFlatButton}"
+                        Height="Auto"/>
+                <Button Content="Balances" Grid.Row="1" x:Name="btn_Balances"
+                        Style="{DynamicResource MaterialDesignFlatButton}"
+                        Height="Auto"/>
+                <Button Content="Transactions" Grid.Row="2" x:Name="btn_Transactions"
+                        Style="{DynamicResource MaterialDesignFlatButton}"
+                        Height="Auto"/>
+                <Button Content="Customers" Grid.Row="3" x:Name="btn_Customers"
+                        Style="{DynamicResource MaterialDesignFlatButton}"
+                        Height="Auto"/>
+                <Button Content="Settings" Grid.Row="4" x:Name="btn_Settings"
+                        Style="{DynamicResource MaterialDesignFlatButton}"
+                        Height="Auto"/>
             </Grid>
-            <Frame DockPanel.Dock="Right"/>
+            <Frame DockPanel.Dock="Right" Source="/Neo_Alfred;component/Pages/Page_Home.xaml" NavigationUIVisibility="Hidden"
+                   Margin="10, 0, 0, 0"/>
         </DockPanel>
     </controls:DpiDecorator>
 </Window>
