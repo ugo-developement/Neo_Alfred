@@ -15,13 +15,7 @@
         TextOptions.TextRenderingMode="Auto"        
         Background="{DynamicResource MaterialDesignPaper}"
         FontFamily="{DynamicResource MaterialDesignFont}">
-    <Grid Background="{DynamicResource MaterialDesignPaper}" Margin="5">
-        <Grid.Effect>
-            <DropShadowEffect Opacity=".15"
-                              BlurRadius="10"
-                              Direction="270"
-                              ShadowDepth="0"/>
-        </Grid.Effect>
+    <Grid Background="{DynamicResource MaterialDesignPaper}">
         <lvc:CartesianChart>
             <lvc:CartesianChart.Series>
                 <lvc:ColumnSeries Values="{Binding Values}"/>

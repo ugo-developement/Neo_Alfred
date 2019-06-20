@@ -22,23 +22,27 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
             <ColumnDefinition/>
-            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <vctrls:SalePriceRangeChart Grid.Row="1" Grid.ColumnSpan="3"/>
-        <StackPanel Grid.Column="0">
-            
-        </StackPanel>
+        <vctrls:SalePriceRangeChart Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" TextOptions.TextFormattingMode="Display"/>
+        <Grid Grid.Row="1" Grid.Column="0">
+            <Label Content="Some form of useful information"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"/>
+        </Grid>
+        <Grid Grid.Column="0" Height="Auto" Width="Auto">
+            <vctrls:SalesToday_Table Height="Auto" Width="Auto"/>
+        </Grid>
 
-        <StackPanel Grid.Column="1">
-            
-        </StackPanel>
+        <Grid Grid.Column="1">
+            <vctrls:SalesWeek_Table Height="Auto" Width="Auto"/>
+        </Grid>
 
-        <StackPanel Grid.Column="2">
-            
-        </StackPanel>
+        <Grid Grid.Column="2">
+            <vctrls:SalesMonth_Table Height="Auto" Width="Auto"/>
+        </Grid>
     </Grid>
 </Page>

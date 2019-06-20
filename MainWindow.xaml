@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Neo_Alfred"
         xmlns:controls="clr-namespace:Neo_Alfred.Controls"
         mc:Ignorable="d"
-        Title="MainWindow" Height="638" Width="816"
+        Title="MainWindow" Height="720" Width="1280"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         TextElement.FontWeight="Regular"
@@ -58,8 +58,7 @@
                         Style="{DynamicResource MaterialDesignFlatButton}"
                         Height="Auto"/>
             </Grid>
-            <Frame DockPanel.Dock="Right" Source="/Neo_Alfred;component/Pages/Page_Home.xaml" NavigationUIVisibility="Hidden"
-                   Margin="10, 0, 0, 0"/>
+            <Frame DockPanel.Dock="Right" Source="/Neo_Alfred;component/Pages/Page_Home.xaml" NavigationUIVisibility="Hidden"/>
         </DockPanel>
     </controls:DpiDecorator>
 </Window>

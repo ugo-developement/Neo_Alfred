@@ -92,6 +92,15 @@
     <Compile Include="VisualControls\PageHome_Ctrls\SalePriceRangeChart.xaml.cs">
       <DependentUpon>SalePriceRangeChart.xaml</DependentUpon>
     </Compile>
+    <Compile Include="VisualControls\PageHome_Ctrls\SalesMonth_Table.xaml.cs">
+      <DependentUpon>SalesMonth_Table.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VisualControls\PageHome_Ctrls\SalesToday_Table.xaml.cs">
+      <DependentUpon>SalesToday_Table.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VisualControls\PageHome_Ctrls\SalesWeek_Table.xaml.cs">
+      <DependentUpon>SalesWeek_Table.xaml</DependentUpon>
+    </Compile>
     <Page Include="Login.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -125,6 +134,18 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="VisualControls\PageHome_Ctrls\SalePriceRangeChart.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VisualControls\PageHome_Ctrls\SalesMonth_Table.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VisualControls\PageHome_Ctrls\SalesToday_Table.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VisualControls\PageHome_Ctrls\SalesWeek_Table.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
