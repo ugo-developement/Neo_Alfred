@@ -10,23 +10,42 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         TextElement.FontWeight="Regular"
-        TextElement.FontSize="20"
+        TextElement.FontSize="16"
         TextOptions.TextFormattingMode="Ideal" 
         TextOptions.TextRenderingMode="Auto"        
         Background="{DynamicResource MaterialDesignPaper}"
         FontFamily="{DynamicResource MaterialDesignFont}">
     <controls:DpiDecorator>
-        <Viewbox>
-            <Grid Width="800" Height="600">
-                <Button Width="100" Height="50" Style="{DynamicResource MaterialDesignRaisedButton}"
-                        Content="Button" Margin="10, 10, 0, 0"
-                        HorizontalAlignment="Left" VerticalAlignment="Top"/>
-                <Button Width="100" Height="50" Style="{DynamicResource MaterialDesignRaisedButton}"
-                        Content="Button" Margin="0, 0, 10, 10"
-                        HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
-                <Label Content="A window capable of scaling with resolution AND dpi"
-                       HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <DockPanel>
+            <DockPanel DockPanel.Dock="Top" MinHeight="60"> 
+                <Button DockPanel.Dock="Left" MaxWidth="50" MaxHeight="50"
+                        VerticalAlignment="Bottom"
+                        Content="{materialDesign:PackIcon Kind=Bell}"
+                        Style="{DynamicResource MaterialDesignFlatButton}"/>
+                <Label DockPanel.Dock="Bottom" VerticalAlignment="Bottom"
+                       Content="No new notifications/tasks."/>
+            </DockPanel>
+            <Grid DockPanel.Dock="Left">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Button Content="{materialDesign:PackIcon Kind=Home, Size=48}" Grid.Row="0" 
+                        Height="Auto"
+                        Style="{DynamicResource MaterialDesignFlatButton}"/>
+                <Button Content="{materialDesign:PackIcon Kind=Bank, Size=48}" Grid.Row="1" 
+                        Height="Auto"
+                        Style="{DynamicResource MaterialDesignFlatButton}"/>
+                <Button Content="{materialDesign:PackIcon Kind=CashMultiple, Size=48}" Grid.Row="2" 
+                        Height="Auto"
+                        Style="{DynamicResource MaterialDesignFlatButton}"/>
+                <Button Content="{materialDesign:PackIcon Kind=AccountMultiple, Size=48}" Grid.Row="3" 
+                        Height="Auto"
+                        Style="{DynamicResource MaterialDesignFlatButton}"/>
             </Grid>
-        </Viewbox>
+            <Frame DockPanel.Dock="Right"/>
+        </DockPanel>
     </controls:DpiDecorator>
 </Window>
