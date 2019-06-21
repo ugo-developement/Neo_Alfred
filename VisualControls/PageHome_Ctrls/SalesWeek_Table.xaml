@@ -17,7 +17,7 @@
              HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
     <Grid Background="{DynamicResource MaterialDesignPaper}" >
         <StackPanel >
-            <Label Content="- Sales Week -" HorizontalAlignment="Center"/>
+            <Label Content="- Trailing Week -" HorizontalAlignment="Center"/>
             <Label Content="" HorizontalAlignment="Center"/>
             <Label Content="# Of Orders:" HorizontalAlignment="Center"/>
             <Label Content="0" HorizontalAlignment="Center" x:Name="NumOrders"/>
