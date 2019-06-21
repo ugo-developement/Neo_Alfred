@@ -13,26 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Neo_Alfred
+namespace Neo_Alfred.Pages
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Page_Balances.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Page_Balances : Page
     {
-        public MainWindow()
+        public Page_Balances()
         {
             InitializeComponent();
-        }
-
-        private void Btn_Home_Click(object sender, RoutedEventArgs e)
-        {
-            frame.Source = new Uri("Pages/Page_Home.xaml", UriKind.Relative);
-        }
-
-        private void Btn_Balances_Click(object sender, RoutedEventArgs e)
-        {
-            frame.Source = new Uri("Pages/Page_Balances.xaml", UriKind.Relative);
         }
     }
 }

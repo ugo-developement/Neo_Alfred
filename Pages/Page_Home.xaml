@@ -27,7 +27,7 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <vctrls:SalePriceRangeChart Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" TextOptions.TextFormattingMode="Display"/>
+        <!--<vctrls:SalePriceRangeChart Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" TextOptions.TextFormattingMode="Display"/>-->
         <Grid Grid.Row="1" Grid.Column="0">
             <Label Content="Some form of useful information"
                    HorizontalAlignment="Center"

@@ -17,16 +17,17 @@
              HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
     <Grid Background="{DynamicResource MaterialDesignPaper}">
         <StackPanel>
-            <Label Content="- Sales Today -" HorizontalAlignment="Center"/>
+            <!--<Label Content="- Sales Today -" HorizontalAlignment="Center"/>-->
+            <Button Content="Refresh Table" Click="Button_Click"/>
             <Label Content="" HorizontalAlignment="Center"/>
             <Label Content="# Of Orders:" HorizontalAlignment="Center"/>
-            <Label Content="0" HorizontalAlignment="Center" x:Name="NumOrdersW"/>
+            <Label Content="" HorizontalAlignment="Center" x:Name="NumOrders"/>
             <Label Content="" HorizontalAlignment="Center"/>
             <Label Content="Avg. Basket Size:" HorizontalAlignment="Center"/>
-            <Label Content="0.0" HorizontalAlignment="Center" x:Name="AvgBasketW"/>
+            <Label Content="" HorizontalAlignment="Center" x:Name="AvgBasket"/>
             <Label Content="" HorizontalAlignment="Center"/>
             <Label Content="Avg. Price:" HorizontalAlignment="Center"/>
-            <Label Content="$0.00" HorizontalAlignment="Center" x:Name="AvgPriceW"/>
+            <Label Content="" HorizontalAlignment="Center" x:Name="AvgPrice"/>
             <Label Content="" HorizontalAlignment="Center"/>
         </StackPanel>
     </Grid>

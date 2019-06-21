@@ -33,5 +33,113 @@ namespace Neo_Alfred.Properties {
                 return ((string)(this["benDoverConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int Orders_Today {
+            get {
+                return ((int)(this["Orders_Today"]));
+            }
+            set {
+                this["Orders_Today"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public double BAVG_Today {
+            get {
+                return ((double)(this["BAVG_Today"]));
+            }
+            set {
+                this["BAVG_Today"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public string PAVG_Today {
+            get {
+                return ((string)(this["PAVG_Today"]));
+            }
+            set {
+                this["PAVG_Today"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int Orders_Week {
+            get {
+                return ((int)(this["Orders_Week"]));
+            }
+            set {
+                this["Orders_Week"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public double BAVG_Week {
+            get {
+                return ((double)(this["BAVG_Week"]));
+            }
+            set {
+                this["BAVG_Week"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public string PAVG_Week {
+            get {
+                return ((string)(this["PAVG_Week"]));
+            }
+            set {
+                this["PAVG_Week"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int Orders_Month {
+            get {
+                return ((int)(this["Orders_Month"]));
+            }
+            set {
+                this["Orders_Month"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public double BAVG_Month {
+            get {
+                return ((double)(this["BAVG_Month"]));
+            }
+            set {
+                this["BAVG_Month"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public string PAVG_Month {
+            get {
+                return ((string)(this["PAVG_Month"]));
+            }
+            set {
+                this["PAVG_Month"] = value;
+            }
+        }
     }
 }

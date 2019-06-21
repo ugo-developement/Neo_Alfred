@@ -19,12 +19,12 @@
         <DockPanel>
             <DockPanel DockPanel.Dock="Top" MinHeight="60"
                        Background="#FF06C566"> 
-                <Button DockPanel.Dock="Top" MaxWidth="60" Visibility="Visible"
+                <Button DockPanel.Dock="Top" MaxWidth="60" Visibility="Collapsed"
                         HorizontalAlignment="Left"
                         Content="{materialDesign:PackIcon Kind=Bell,Size=24}"
                         Style="{DynamicResource MaterialDesignFlatButton}"
                         Foreground="#FFFFFF"/>
-                <Button DockPanel.Dock="Top" MaxWidth="60" Visibility="Collapsed"
+                <Button DockPanel.Dock="Top" MaxWidth="60" Visibility="Visible"
                         HorizontalAlignment="Left"
                         Content="{materialDesign:PackIcon Kind=BellRing,Size=24}"
                         Style="{DynamicResource MaterialDesignFlatButton}"
@@ -44,10 +44,12 @@
                 </Grid.RowDefinitions>
                 <Button Content="Home" Grid.Row="0" x:Name="btn_Home"
                         Style="{DynamicResource MaterialDesignFlatButton}"
-                        Height="Auto"/>
+                        Height="Auto"
+                        Click="Btn_Home_Click"/>
                 <Button Content="Balances" Grid.Row="1" x:Name="btn_Balances"
                         Style="{DynamicResource MaterialDesignFlatButton}"
-                        Height="Auto"/>
+                        Height="Auto"
+                        Click="Btn_Balances_Click"/>
                 <Button Content="Transactions" Grid.Row="2" x:Name="btn_Transactions"
                         Style="{DynamicResource MaterialDesignFlatButton}"
                         Height="Auto"/>
@@ -58,7 +60,7 @@
                         Style="{DynamicResource MaterialDesignFlatButton}"
                         Height="Auto"/>
             </Grid>
-            <Frame DockPanel.Dock="Right" Source="/Neo_Alfred;component/Pages/Page_Home.xaml" NavigationUIVisibility="Hidden"/>
+            <Frame x:Name="frame" DockPanel.Dock="Right" Source="/Neo_Alfred;component/Pages/Page_Home.xaml" NavigationUIVisibility="Hidden"/>
         </DockPanel>
     </controls:DpiDecorator>
 </Window>
