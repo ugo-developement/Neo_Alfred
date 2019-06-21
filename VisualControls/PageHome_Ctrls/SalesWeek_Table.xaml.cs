@@ -23,6 +23,9 @@ namespace Neo_Alfred.VisualControls.PageHome_Ctrls
         public SalesWeek_Table()
         {
             InitializeComponent();
+            NumOrders.Content = Properties.Settings.Default.Orders_Week;
+            AvgBasket.Content = Properties.Settings.Default.BAVG_Week;
+            AvgPrice.Content = Properties.Settings.Default.PAVG_Week;
         }
     }
 }

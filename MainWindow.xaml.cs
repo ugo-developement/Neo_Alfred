@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Neo_Alfred.BusinessLayer;
 
 namespace Neo_Alfred
 {
@@ -23,6 +24,13 @@ namespace Neo_Alfred
         public MainWindow()
         {
             InitializeComponent();
+            // Refresh all of the stored data
+            // on start up of the program.
+            try
+            {
+                SalesDataTable_Business.GetSalesDataToday();
+            }
+            catch (Exception) { }
         }
 
         private void Btn_Home_Click(object sender, RoutedEventArgs e)

@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Neo_Alfred.BusinessLayer;
 
 namespace Neo_Alfred.Pages
 {
@@ -23,6 +24,13 @@ namespace Neo_Alfred.Pages
         public Page_Home()
         {
             InitializeComponent();
+            DataContext = new SalesDataTable_Business();
+        }
+
+        private void Refresh_Click(object sender, RoutedEventArgs e)
+        {
+            SalesDataTable_Business.GetSalesDataToday();
+            InvalidateVisual();
         }
     }
 }

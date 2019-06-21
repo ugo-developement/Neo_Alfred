@@ -17,8 +17,7 @@
              HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
     <Grid Background="{DynamicResource MaterialDesignPaper}">
         <StackPanel>
-            <!--<Label Content="- Sales Today -" HorizontalAlignment="Center"/>-->
-            <Button Content="Refresh Table" Click="Button_Click"/>
+            <Label Content="- Sales Today -" HorizontalAlignment="Center"/>
             <Label Content="" HorizontalAlignment="Center"/>
             <Label Content="# Of Orders:" HorizontalAlignment="Center"/>
             <Label Content="" HorizontalAlignment="Center" x:Name="NumOrders"/>

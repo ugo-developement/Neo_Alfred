@@ -23,6 +23,9 @@ namespace Neo_Alfred.VisualControls.PageHome_Ctrls
         public SalesMonth_Table()
         {
             InitializeComponent();
+            NumOrders.Content = Properties.Settings.Default.Orders_Month;
+            AvgBasket.Content = Properties.Settings.Default.BAVG_Month;
+            AvgPrice.Content = Properties.Settings.Default.PAVG_Month;
         }
     }
 }
