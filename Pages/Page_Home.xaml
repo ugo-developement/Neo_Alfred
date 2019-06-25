@@ -16,32 +16,32 @@
         TextOptions.TextRenderingMode="Auto"        
         Background="{DynamicResource MaterialDesignPaper}"
         FontFamily="{DynamicResource MaterialDesignFont}">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <vctrls:SalePriceRangeChart Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" TextOptions.TextFormattingMode="Display"/>
+            <Grid Grid.Row="1" Grid.Column="0">
+                <Button Style="{DynamicResource MaterialDesignFloatingActionButton}"
+                    Content="{materialDesign:PackIcon Kind=Refresh,Size=48}"
+                    Visibility="Collapsed"/>
+            </Grid>
+            <Grid Grid.Column="0" Height="Auto" Width="Auto">
+                <vctrls:SalesToday_Table Height="Auto" Width="Auto"/>
+            </Grid>
 
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-        </Grid.RowDefinitions>
-        <vctrls:SalePriceRangeChart Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" TextOptions.TextFormattingMode="Display"/>
-        <Grid Grid.Row="1" Grid.Column="0">
-            <Button Style="{DynamicResource MaterialDesignFloatingActionButton}"
-                    Content="{materialDesign:PackIcon Kind=Refresh,Size=48}"/>
-        </Grid>
-        <Grid Grid.Column="0" Height="Auto" Width="Auto">
-            <vctrls:SalesToday_Table Height="Auto" Width="Auto"/>
-        </Grid>
+            <Grid Grid.Column="1">
+                <vctrls:SalesWeek_Table Height="Auto" Width="Auto"/>
+            </Grid>
 
-        <Grid Grid.Column="1">
-            <vctrls:SalesWeek_Table Height="Auto" Width="Auto"/>
+            <Grid Grid.Column="2">
+                <vctrls:SalesMonth_Table Height="Auto" Width="Auto"/>
+            </Grid>
         </Grid>
-
-        <Grid Grid.Column="2">
-            <vctrls:SalesMonth_Table Height="Auto" Width="Auto"/>
-        </Grid>
-    </Grid>
 </Page>
